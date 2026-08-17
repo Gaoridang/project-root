@@ -12,7 +12,7 @@ export function HomePage() {
       <ProjectSection
         title="Ongoing"
         description="Still being built."
-        empty="Nothing in progress."
+        empty="Nothing in progress. Add a file in src/content/projects/."
         projects={ongoing}
       />
       <ProjectSection
