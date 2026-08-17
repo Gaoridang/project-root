@@ -1,0 +1,65 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Pretendard", "Apple SD Gothic Neo", "Noto Sans KR",
+    ui-sans-serif, system-ui, sans-serif;
+  --color-paper: #f4f1ea;
+  --color-ink: #1c1917;
+  --color-muted: #78716c;
+  --color-line: #e7e0d5;
+  --color-card: #fffdf8;
+}
+
+html,
+body,
+#root {
+  min-height: 100%;
+}
+
+body {
+  margin: 0;
+  background: var(--color-paper);
+  color: var(--color-ink);
+  font-family: var(--font-sans);
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+.embed-card {
+  box-shadow: 0 1px 0 rgb(28 25 23 / 0.04);
+  transition:
+    border-color 160ms ease,
+    transform 160ms ease,
+    box-shadow 160ms ease;
+}
+
+a.embed-card:hover {
+  border-color: rgb(28 25 23 / 0.2);
+  transform: translateY(-1px);
+  box-shadow: 0 8px 20px -12px rgb(28 25 23 / 0.25);
+}
+
+.tone-forest {
+  background: #dce8e2;
+  color: #1d3b32;
+}
+
+.tone-slate {
+  background: #dce4ea;
+  color: #1e3340;
+}
+
+.tone-clay {
+  background: #eadfd4;
+  color: #4a3224;
+}
+
+.tone-ink {
+  background: #e4e2dc;
+  color: #1c1917;
+}
+
+.tone-plum {
+  background: #e6dde6;
+  color: #3d2a40;
+}

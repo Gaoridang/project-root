@@ -1,0 +1,67 @@
+import type { Project } from "../types";
+import { defineProject } from "./defineProject";
+
+export const mockProjects: Project[] = [
+  defineProject({
+    id: "night-bus",
+    title: "Night Bus",
+    summary: "When the last bus actually leaves.",
+    status: "ongoing",
+    year: 2026,
+    stack: ["SwiftUI"],
+    icon: "N",
+    tone: "forest",
+    links: { github: "https://github.com/example/night-bus" },
+    notes: "A small timing tool for the last bus home.",
+  }),
+  defineProject({
+    id: "quiet-tab",
+    title: "Quiet Tab",
+    summary: "One tab for the thing you are deciding.",
+    status: "ongoing",
+    year: 2026,
+    stack: ["SwiftUI"],
+    icon: "Q",
+    tone: "slate",
+    links: { github: "https://github.com/example/quiet-tab" },
+  }),
+  defineProject({
+    id: "field-notes",
+    title: "Field Notes",
+    summary: "A capture box for walks.",
+    status: "ongoing",
+    year: 2026,
+    stack: ["SwiftUI"],
+    icon: "F",
+    tone: "clay",
+    links: { github: "https://github.com/example/field-notes" },
+  }),
+  defineProject({
+    id: "signal",
+    title: "Signal",
+    summary: "Send a single yes or no.",
+    status: "published",
+    year: 2026,
+    stack: ["Vite", "React"],
+    icon: "S",
+    tone: "ink",
+    links: {
+      github: "https://github.com/example/signal",
+      live: "https://example.com/signal",
+    },
+  }),
+  defineProject({
+    id: "fold",
+    title: "Fold",
+    summary: "A one-page note you can share.",
+    status: "published",
+    year: 2026,
+    stack: ["Vite", "React"],
+    icon: "F",
+    tone: "plum",
+    links: {
+      github: "https://github.com/example/fold",
+      live: "https://example.com/fold",
+    },
+  }),
+];
